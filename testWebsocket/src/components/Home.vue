@@ -19,4 +19,4 @@ import Toolbare from './ToolbareComponent.vue'
 
 <style scoped>
 
-</style>>
+</style>
