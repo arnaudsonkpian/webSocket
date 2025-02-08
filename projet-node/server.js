@@ -31,12 +31,15 @@ io.on('connection', (socket) => {
 
   socket.on('draw', (data) => {
     console.log('Data received from client:', data);
+    // Envoie du message au client courant
     socket.broadcast.emit('draw', data);
+    
   });
+  
 
-  socket.on('disconnect', () => {
-    console.log("Client disconnected");
-  });
+  // socket.on('disconnect', () => {
+  //   console.log("Client disconnected");
+  // });
 });
 
 // Lancer le serveur HTTP
